@@ -1,9 +1,6 @@
-package com.cicd.sample.microservice.controller;
+package com.cicd.sample.microservice.UnitTests.controller;
 
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.HttpStatus;
 
 import static org.assertj.core.api.Assertions.assertThat;

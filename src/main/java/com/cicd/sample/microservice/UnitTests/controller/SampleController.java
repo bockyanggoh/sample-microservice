@@ -1,4 +1,4 @@
-package com.cicd.sample.microservice.controller;
+package com.cicd.sample.microservice.UnitTests.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
