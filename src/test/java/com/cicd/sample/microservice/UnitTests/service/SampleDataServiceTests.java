@@ -3,18 +3,13 @@ package com.cicd.sample.microservice.UnitTests.service;
 
 import com.cicd.sample.microservice.repository.SampleDataRepository;
 import com.cicd.sample.microservice.service.SampleDataService;
-import models.SampleDataDto;
-import models.SampleDataEntity;
-import org.junit.jupiter.api.BeforeAll;
+import com.cicd.sample.microservice.models.SampleDataDto;
+import com.cicd.sample.microservice.models.SampleDataEntity;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentMatchers;
-import org.mockito.Mock;
 import org.mockito.Mockito;
-import org.mockito.internal.matchers.Null;
 
-import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 

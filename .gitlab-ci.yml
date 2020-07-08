@@ -1,0 +1,31 @@
+stages:
+  - unit_tests
+  - integration_tests
+  - deploy_manual
+  - deploy
+
+unit_tests:
+  stage: unit_tests
+  image: maven:3.6.3-jdk-11-slim
+  script:
+    - mvn -Dtest="com.cicd.sample.microservice.UnitTests.**.*Tests" test
+
+integration_tests:
+  stage: integration_tests
+  image: maven:3.6.3-jdk-11-slim
+  script:
+    - mvn -Dtest="com.cicd.sample.microservice.IntegrationTests.**.*IntegrationTests" test
+
+
+.deploy:
+  script:
+    - echo "placeholder trigger"
+
+deploy:
+  extends: .deploy
+  stage: deploy
+
+deploy_manual:
+  extends: .deploy
+  stage: deploy_manual
+  when: manual

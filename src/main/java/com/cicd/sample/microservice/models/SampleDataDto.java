@@ -1,4 +1,4 @@
-package models;
+package com.cicd.sample.microservice.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

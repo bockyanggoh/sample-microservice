@@ -1,6 +1,6 @@
 package com.cicd.sample.microservice.repository;
 
-import models.SampleDataEntity;
+import com.cicd.sample.microservice.models.SampleDataEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

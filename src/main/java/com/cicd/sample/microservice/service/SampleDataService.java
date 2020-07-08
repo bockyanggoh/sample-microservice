@@ -2,8 +2,9 @@ package com.cicd.sample.microservice.service;
 
 import com.cicd.sample.microservice.repository.SampleDataRepository;
 import lombok.extern.slf4j.Slf4j;
-import models.SampleDataDto;
-import models.SampleDataEntity;
+import com.cicd.sample.microservice.models.SampleDataDto;
+import com.cicd.sample.microservice.models.SampleDataEntity;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -16,6 +17,7 @@ import java.util.stream.Collectors;
 public class SampleDataService {
     private SampleDataRepository repository;
 
+    @Autowired
     public SampleDataService(SampleDataRepository repository) {
         this.repository = repository;
     }
