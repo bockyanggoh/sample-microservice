@@ -29,3 +29,9 @@ deploy_manual:
   extends: .deploy
   stage: deploy_manual
   when: manual
+
+cache:
+  paths:
+    - .m2/repository
+  # Cache shared across all branches and all jobs
+  key: one-key-to-rule-them-all
